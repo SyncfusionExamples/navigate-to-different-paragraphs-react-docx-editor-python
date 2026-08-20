@@ -80,7 +80,6 @@ npm run dev
 ```
 
 Open the application using the URL displayed in the terminal.
-```
 
 # License 
 
