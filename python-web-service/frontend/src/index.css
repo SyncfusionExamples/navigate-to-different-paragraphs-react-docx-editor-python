@@ -1,0 +1,136 @@
+@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-react-documenteditor/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-ribbon/styles/tailwind3.css';
+
+
+
+
+.docx-layout {
+    display: flex;
+    height: calc(100vh - 20px); /* adjust as needed */
+    overflow: hidden;
+}
+
+.docx-viewer-panel {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+
+.findings-panel {
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  border-left: 1px solid #e5e7eb;
+  padding: 28px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.findings-panel h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.hits-count {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin-bottom: 12px;
+}
+
+/* Findings */
+
+.finding-card {
+  position: relative;
+  padding: 14px 12px 14px 18px;
+  margin-bottom: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.finding-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 4px;
+  height: 48px;
+  border-radius: 4px;
+  background: #ec4899;
+}
+
+.finding-card:nth-child(4)::before {
+  background: #3b82f6;
+}
+
+.finding-card:nth-child(5)::before {
+  background: #22c55e;
+}
+
+.finding-card:hover {
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.finding-card.active {
+  background: #f3f4f6;
+  border-radius: 8px;
+}
+
+.result-page {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.result-highlight {
+  font-size: 14px;
+  color: #374151;
+  letter-spacing: .3px;
+}
+
+.finding-card:not(:last-of-type) {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 18px;
+}
+
+/* Buttons */
+
+.action-button {
+  height: 52px;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  margin-top: 14px;
+  font-size: 16px;
+  color: #374151;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.action-button:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.action-button:last-child {
+  margin-top: 10px;
+}
