@@ -137,7 +137,7 @@ function App() {
           ref={editorRef}
           height="100%"
           toolbarMode="Ribbon"
-          serviceUrl="https://document.syncfusion.com/web-services/docx-editor/api/documenteditor/"
+          serviceUrl="http://127.0.0.1:5000/"
           enableToolbar={true}
           documentChange={onDocumentChange}
         />
